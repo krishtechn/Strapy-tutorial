@@ -2,6 +2,9 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
+# How to create Strapi app 
+  npx create-strapi-app@latest my-project
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
@@ -55,3 +58,22 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+# Installing PostgreSQL & Connecting to Strapi | Strapi Tutorial #2
+ -step-1: Download postgresql and Pgadmin 4
+ -step-2 : Connect Strapi to PostgreSQL .
+  # code 
+      module.exports = ({ env }) => ({<br>
+      defaultConnection: "default",<br>
+      connection: {<br>
+        client: "postgres",<br>
+        connection: {<br>
+          host: env("DATABASE_HOST", "localhost"),<br>
+          port: env.int("DATABASE_PORT", 3000),<br>
+          database: env("DATABASE_NAME", "TechnicalKrish"),<br>
+          user: env("DATABASE_USERNAME", "postgres"),<br>
+          password: env("DATABASE_PASSWORD", "krishna"),<br>
+          schema: env("DATABASE_SCHEMA", "public"),<br>
+        },<br>
+      }<br>
+    });<br>
