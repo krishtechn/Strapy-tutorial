@@ -1,7 +1,10 @@
 import React from 'react'
-
+import Link from 'next/link';
 
 const Products = (props) => {
+  // const router = useRouter();
+  // console.log(router);
+
   return (
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
@@ -54,12 +57,9 @@ const Products = (props) => {
                  <button className={`bg-${color}-800 w-4 h-4 rounded-lg`}></button>
                  <p className="leading-relaxed mb-3"></p>
                  <div className="flex items-center flex-wrap ">
-                   <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                       <path d="M5 12h14"></path>
-                       <path d="M12 5l7 7-7 7"></path>
-                     </svg>
-                   </a>
+                <Link href={'product/'+slug}>
+                <button className="bg-purple-800 py-2 px-9 my-3 text-sm text-white font-serif rounded-sm">Buy Now</button>
+                </Link>
                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                     Rs:{price}
                    </span>

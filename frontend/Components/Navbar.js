@@ -15,6 +15,7 @@ const Navbar = ({title}) => {
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center mx-3">
       <Link className='link' href='./Home'>Home</Link>
       <Link className='link' href='./About'>About</Link>
+      <Link className='link' href='./Products'>Products</Link>
       <Link className='link' href='./Services'>Services</Link>
       <Link className='link' href='./Contact'>Contact</Link>
     </nav>
