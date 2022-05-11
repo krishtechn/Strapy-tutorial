@@ -60,20 +60,21 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
 
 # Installing PostgreSQL & Connecting to Strapi | Strapi Tutorial #2
- -step-1: Download postgresql and Pgadmin 4
- -step-2 : Connect Strapi to PostgreSQL .
-  # code 
-      module.exports = ({ env }) => ({<br>
-      defaultConnection: "default",<br>
-      connection: {<br>
-        client: "postgres",<br>
-        connection: {<br>
-          host: env("DATABASE_HOST", "localhost"),<br>
-          port: env.int("DATABASE_PORT", 3000),<br>
-          database: env("DATABASE_NAME", "TechnicalKrish"),<br>
-          user: env("DATABASE_USERNAME", "postgres"),<br>
-          password: env("DATABASE_PASSWORD", "krishna"),<br>
-          schema: env("DATABASE_SCHEMA", "public"),<br>
-        },<br>
-      }<br>
-    });<br>
+- [step-1] - Download postgresql and Pgadmin 4.
+- [step-2] - Connect Strapi to PostgreSQL.
+
+  # Connect Strapi to PostgreSQL.
+      module.exports = ({ env }) => ({
+      defaultConnection: "default",
+      connection: {
+        client: "postgres",
+        connection: {
+          host: env("DATABASE_HOST"lhost"),
+          port: env.int("DATABASE_PORT000),
+          database: env("DATABASE_NAMETechnicalKrish"),
+          user: env("DATABASE_USERNAMEpostgres"),
+          password: en", "krishna"),
+          schema: env("DATABASE_SCHEMApublic"),
+        },
+      }
+    });

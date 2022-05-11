@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+  }
+
+.image{
+  -webkit-clip-path: polygon(0% 0%, 10% 0%, 0%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.Slider{
+  width:90%;
+position:relative;
+top:20px;
+margin:0 auto;
+}
+
+.img{
+    height:100%;
+    border-radius:4px;
+}
+.inputfield{
+  border: 2px solid #eee;
+  outline: none;
+  padding: 0.3rem 2rem;
+  width: 100%;
+  margin-bottom: 30px;
+}

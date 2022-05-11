@@ -12,11 +12,63 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
-      "maxLength": 255,
+      "maxLength": 71,
       "minLength": 3
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "tshirt",
+        "mug",
+        "hoodle",
+        "stickers"
+      ],
+      "default": "tshirt",
+      "required": true
+    },
+    "size": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "black",
+        "white"
+      ],
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "availableQty": {
+      "type": "integer",
+      "required": true
     }
   }
 }

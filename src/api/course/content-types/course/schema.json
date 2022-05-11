@@ -4,8 +4,7 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "Course",
-    "description": ""
+    "displayName": "course"
   },
   "options": {
     "draftAndPublish": true
@@ -14,11 +13,16 @@
   "attributes": {
     "title": {
       "type": "string",
-      "maxLength": 300,
-      "default": "No desc added"
+      "required": true
     },
     "desc": {
-      "type": "richtext"
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "datetime",
+      "default": "2022-05-19T00:27:00.000Z",
+      "required": true
     }
   }
 }

@@ -51,6 +51,7 @@ const Services = (props) => {
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">{title}</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">{desc}</h2>
           <p class="mt-1">{date}</p>
+          <a href="">Data</a>
         </div>
       </div>
 })}
